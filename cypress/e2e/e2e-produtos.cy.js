@@ -19,7 +19,7 @@ describe('Funcionalidade Página de produtos ', () => {
 
     });
 
-    it.only('Deve adicionar um produto ao carrinho', () => {
+    it('Deve adicionar um produto ao carrinho', () => {
     var quantidade = 3
 
         cy.get('[class="product-block grid"]')
@@ -33,15 +33,15 @@ describe('Funcionalidade Página de produtos ', () => {
             cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Ajax Full-Zip Sweatshirt” foram adicionados no seu carrinho')
             
             
-            
-
-       
-
-      
-
 
     });
+    
+    it('Deve adicionar produtos ao carrinho - Usando Comando customizado', () => {
+        cy.addProdutos('Arcadio Gym Short', '34', 'Black', 2)
+    });
 
-
+    it('Deve adicionar produtos ao carrinho - Usando Comando customizado', () => {
+        cy.addProdutos('Abominable Hoodie', 'M', 'Blue', 10)
+    })
 
 });
