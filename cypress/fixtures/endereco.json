@@ -1,0 +1,43 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Lucia",
+        "empresa": "EBAC",
+        "endereco": "Av. Paulista",
+        "numero": "5000",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "04788888",
+        "telefone": "11999999999",
+        "email": "ana@teste.com" 
+    },
+
+    {
+        "nome": "Maria",
+        "sobrenome": "Luisa",
+        "empresa": "Avon",
+        "endereco": "Av. Brasil",
+        "numero": "3000",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "02180000",
+        "telefone": "11888888888",
+        "email": "maria@teste.com" 
+    },
+
+    {
+        "nome": "Antonio",
+        "sobrenome": "Carlos",
+        "empresa": "Google",
+        "endereco": "Av. Atlântica",
+        "numero": "2500",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "04710000",
+        "telefone": "11977777777",
+        "email": "antonio@teste.com"
+}
+]
