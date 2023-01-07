@@ -1,6 +1,8 @@
 /// <reference types="cypress" />
+import enderecoPage from '../support/page-objects/endereco.page';
 import EnderecoPage from '../support/page-objects/endereco.page'
 const dadosEndereco = require('../fixtures/endereco.json')
+
 
 describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
 beforeEach(() => {
@@ -35,6 +37,16 @@ beforeEach(() => {
         cy.get('.woocommerce-message').should('contain' , 'Endereço alterado com sucesso.')
     });
 
+    
+     it.only('Deve fazer cadastro de entrega com sucesso', () => {
+        EnderecoPage.editarEnderecoEntrega('Lucia' , 'Souza' , 'Google' , 'Brasil' , 'Avenida Rio Bonito' , '2600' , 'São Paulo' , 'São Paulo' , '04788888')
+        cy.get('.woocommerce-message').should('contain' ,'Endereço alterado com sucesso.')
+        
+     });
+
+    
+        
+      
     
         
     
